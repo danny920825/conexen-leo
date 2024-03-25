@@ -11,7 +11,7 @@
     const filas = document.querySelectorAll('tbody tr');
     const reload = document.getElementsByClassName("mui-1yz3mit")[0] 
     
-    if (filas.length > 1000) {
+    if (filas.length < 1000) {
       console.log('No hay filas para procesar. Revisando nuevamente en 1 segundo...');
       // Si no hay filas, clickea el boton "reload" que hace un nuevo fetch, y reintenta procesar las filas
       reload.style.boder = "1px solid red"
