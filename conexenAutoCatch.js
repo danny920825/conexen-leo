@@ -9,10 +9,13 @@
   // Función principal para procesar las filas en la tabla
   async function procesarFilas() {
     const filas = document.querySelectorAll('tbody tr');
+    const reload = document.getElementsByClassName("mui-1yz3mit")[0]
     
     if (filas.length < 1) {
       console.log('No hay filas para procesar. Revisando nuevamente en 1 segundo...');
-      await esperar(1000); // Espera y revisa nuevamente
+      // Si no hay filas, clickea el boton "reload" que hace un nuevo fetch, y reintenta procesar las filas
+      reload.click();
+      esperar(200)
       return procesarFilas(); // Reintenta procesar las filas
     }
     
