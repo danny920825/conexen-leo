@@ -15,7 +15,7 @@
       console.log('No hay filas para procesar. Revisando nuevamente en 1 segundo...');
       // Si no hay filas, clickea el boton "reload" que hace un nuevo fetch, y reintenta procesar las filas
       reload.click();
-      esperar(200)
+      esperar(350)
       return procesarFilas(); // Reintenta procesar las filas
     }
     
