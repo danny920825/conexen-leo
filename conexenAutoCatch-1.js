@@ -12,11 +12,12 @@
     const reload = document.getElementsByClassName("mui-1yz3mit")[0] 
     
     if (filas.length < 1000) {
-      console.log('No hay filas para procesar. Revisando nuevamente en 1 segundo...');
-      // Si no hay filas, clickea el boton "reload" que hace un nuevo fetch, y reintenta procesar las filas
-      reload.style.boder = "1px solid red"
+      console.log('No hay filas para procesar. Refrescando...');
+        // Si no hay filas, clickea el botón "reload" que hace un nuevo fetch, y reintenta procesar las filas
+      reload.style.border = "1px solid red"; // Corregido typo de 'border'
       reload.click();
-      await esperar(300)
+      await esperar(350); // Corregido para esperar correctamente
+      return procesarFilas(); // Reintenta procesar las filas
       return procesarFilas(); // Reintenta procesar las filas
     }
     
