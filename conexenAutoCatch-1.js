@@ -16,7 +16,7 @@
       // Si no hay filas, clickea el boton "reload" que hace un nuevo fetch, y reintenta procesar las filas
       reload.style.boder = "1px solid red"
       reload.click();
-      esperar(300)
+      await esperar(300)
       return procesarFilas(); // Reintenta procesar las filas
     }
     
