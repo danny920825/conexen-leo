@@ -13,6 +13,7 @@
     
     if (filas.length < 1000) {
       console.log('No hay filas para procesar. Refrescando...');
+      console.log('Verificando si el versionado funciona...');
         // Si no hay filas, clickea el botón "reload" que hace un nuevo fetch, y reintenta procesar las filas
       reload.style.border = "1px solid red"; // Corregido typo de 'border'
       reload.click();
