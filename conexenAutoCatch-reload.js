@@ -17,7 +17,7 @@
         // Si no hay filas, clickea el botón "reload" que hace un nuevo fetch, y reintenta procesar las filas
       reload.style.border = "1px solid red"; // Corregido typo de 'border'
       reload.click();
-      const RELOAD_TIME = 500
+      const RELOAD_TIME = 600
       console.log(`Esperando ${RELOAD_TIME}`)
       await esperar(RELOAD_TIME); // Corregido para esperar correctamente
       return procesarFilas(); // Reintenta procesar las filas
